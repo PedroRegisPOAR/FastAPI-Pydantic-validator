@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python FastAPI @validator test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app.main:app",
+        "--reload",
+        "--app-dir",
+        "./app"
+      ],
+      "envFile": "${workspaceFolder}/.env.dev",
+      "jinja": true,
+      "justMyCode": true
+    },
+    {
+      "name": "Pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "app",
+        "-n",
+        "auto",
+      ],
+      "jinja": true,
+      "justMyCode": true
+    }
+  ]
+}

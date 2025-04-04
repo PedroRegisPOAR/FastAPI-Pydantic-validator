@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "edonet.vscode-command-runner",
+    "ms-python.debugpy",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+  ]
+}
